@@ -94,8 +94,6 @@ graph LR
 
   The **Repository** is your version control system.
 
-  ---
-
 ### Cancel added files (unstaged changes)
 
 `git reset` **unstaged** all changes files (files you add into **stage** list) or
@@ -170,14 +168,12 @@ Use `git reset head fileName.extend` can discard(delete) the specified file in *
 
 `git push -u origin master` this`-u`push and link local master branch to the GitHub master branch
 
-#### Example:
+#### Example (Https):
 
 ```bash
-git remote add origin https://github.com/iphauman/LaernGit.git
-git push -u origin master
+$ git remote add origin https://github.com/iphauman/LaernGit.git
+$ git push -u origin master
 ```
-
-
 
 ### Clone Github project to local
 
@@ -185,7 +181,15 @@ Before clone a Github project, you must create the project or have the repo link
 
 Git support ssh potocol and http potocol where ssh is faster than http.
 
-#### How to create ssh potocol to link GitHub?
+After created a repo, use`git clone <link> ` to clone your repo to local current path.
+
+#### HTTPs to link GitHub
+
+```bash
+$ git clone https://github.com/userName/repoName.git
+```
+
+#### How to create SSH potocol to link GitHub?
 
 In the root directory of user
 
@@ -200,10 +204,11 @@ After generated the SSH, add `id_rsa.pub` to your GitHub account.
 
 #### Clone project by using SSH
 
-`git clone git@github.com:iphauman/gitskills.git`
+```bash
+$ git clone git@github.com:userName/repoName.git
+```
 
-You will get the SSH authenticity warning at the first clone, you may check the GitHub SSH at [GitHub SSH](https://help.github.com/articles/github-s-ssh-key-fingerprints/)
-It then permantly added the GitHub RSA to the list of known host. (means you will not see the warning again)
+*Notes: You will get the SSH authenticity warning at the first clone, you may check the GitHub SSH at [GitHub SSH](https://help.github.com/articles/github-s-ssh-key-fingerprints/). It then permantly added the GitHub RSA to the list of known host. (means you will not see the warning again)*
 
 ## Working with branch
 
