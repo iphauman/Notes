@@ -80,7 +80,7 @@ Show modified file(s)
 
 ## Commit Control
 
-**==Note: You must need to know the concept of Git add and commit process before to control your project.==**
+*Note: You must need to know the concept of Git add and commit process before to control your project.*
 
 ```mermaid
 graph LR
@@ -231,7 +231,7 @@ $ git checkout dev
 - Use `git checkout branchName` switch to branch branchName
 - Use `git branch`  to check the current branch
 
- Use `git checkout` with `-b` option perform the combination command of `git branch branchName` and `git checkout branchName` like the follow
+ Use `git checkout` with `-b` option perform the combined command of `git branch branchName` and `git checkout branchName` like the follow
 
 ```bash
 $ git checkout -b dev
@@ -264,7 +264,7 @@ Use `git checkout master` to switch HEAD to master, then use  `git merge branchN
 
 #### Delete branch
 
-Use `git branch -d branchName` to delete branch.
+Use `git branch -d branchName` to delete branch. Use `-D` for force delete.
 
 ### Merge Mode
 
